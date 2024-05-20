@@ -9,12 +9,11 @@ import { CatalogPage } from './page/CatalogPage';
 import { FavoritesPage } from './page/FavoritesPage';
 import { MainLayout } from './layouts/MainLayout';
 
-
 function App() {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <BrowserRouter>
+        <BrowserRouter basename="/test-task">
           <Routes>
             <Route path="/" element={<MainLayout />}>
               <Route index element={<HomePage />} />
