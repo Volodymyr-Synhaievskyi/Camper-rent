@@ -1,0 +1,23 @@
+@import '../index.css';
+
+.ratingIconFilled {
+  stroke: var(--star-color);
+  fill: var(--star-color);
+}
+
+.ratingIconEmpty {
+  stroke: var(--block-color);
+  fill: var(--block-color);
+}
+
+.defaultStyle {
+  stroke: var(--main-color);
+  fill: none;
+  cursor: pointer;
+}
+
+.selectedStyle {
+  fill: var(--button-color);
+  stroke: var(--button-color);
+  cursor: pointer;
+}

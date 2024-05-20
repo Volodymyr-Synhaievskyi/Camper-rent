@@ -1,0 +1,92 @@
+.modalContent {
+  background-color: white;
+  width: 982px;
+  height: 720px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.closeBtn {
+  background-color: white;
+  border: none;
+}
+
+.headerWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.modalScroll {
+  overflow: scroll;
+  height: 534px;
+}
+
+.galleryWrapper {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.imgWrapper {
+  width: 290px;
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardImg {
+  object-fit: cover
+}
+
+.camperDescription {
+  margin-top: 24px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 40px;
+  margin-top: 44px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.2);
+}
+
+.modalDetailBtn {
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+}
+
+
+.activeBtn::before {
+  width: 100%;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -27px;
+  left: 0px;
+  height: 5px;
+  background-color: var(--button-color);
+}
+
+.detailsWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  margin-top: 44px;
+}

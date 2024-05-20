@@ -1,0 +1,11 @@
+.favoriteWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.message {
+  padding-top: 40px;
+  text-align: center;
+}

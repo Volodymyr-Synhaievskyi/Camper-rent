@@ -1,0 +1,16 @@
+.locationLabel {
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--main-color);
+  opacity: 60%;
+}
+
+.inputField {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px 18px 18px 30px;
+}
+
+.inputContainer {
+  position: relative;
+}

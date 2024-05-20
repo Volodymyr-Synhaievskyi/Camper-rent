@@ -1,0 +1,41 @@
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.bannerText {
+  color: var(--block-color);
+  font-size: 48px;
+  padding-top: 200px;
+}
+
+.ctaButton {
+  padding: 16px 60px;
+  font-size: 24px;
+  border: none;
+  border-radius: 200px;
+  background-color: var(--button-color);
+  color: #fff;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.ctaButton:hover {
+  background-color: var(--button-hover-color);
+}

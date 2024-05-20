@@ -1,0 +1,15 @@
+.componentWrapper {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.ratingWrap {
+  display: flex;
+  gap: 4px;
+}
+
+.ratingLink {
+  text-decoration: underline;
+
+}
