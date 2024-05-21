@@ -1,8 +1,0 @@
-.equipmentWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 9px;
-  margin-top: 24px;
-  margin-bottom: 32px;
-  width: inherit;
-}
