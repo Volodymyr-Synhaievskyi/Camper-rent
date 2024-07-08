@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.description h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.description p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.banner:hover .banner-image {
+    transform: scale(1.1);
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.flex {
+    display: flex;
+}
+
+.banner-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    width: 250px; /* Set the width */
+    height: 50px; /* Set the height */
+    font-size: 20px;
+    color: #fff;
+    background-color: #E44848;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-spacing {
+    margin-right: 20px;
+}
+
+
+.banner-button:hover {
+    background-color: #CC3232FF;
+    transform: scale(1.05);
+}
+
+
+.favorites-button {
+    margin-top: 10px;
+    background-color: #E44848;
+}
+
+.favorites-button:hover {
+    background-color: #CC3232FF;
+    border-color: white;
+}
+
+
+.services, .testimonials {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.services h2, .testimonials h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-cards, .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card, .testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover, .testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #E44848;
+}
+
+.service-card p, .testimonial-card p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.testimonial-card p {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .service-cards, .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

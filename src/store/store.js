@@ -1,17 +1,14 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { PERSIST, REHYDRATE } from 'redux-persist';
-import persistStore from 'redux-persist/es/persistStore';
+import {configureStore} from "@reduxjs/toolkit";
+import {camperReducer} from "./slices/camperSlice";
+import {favoriteReducer} from "./slices/favoriteSlice";
 
-import { reducer } from './reducer';
 
-export const store = configureStore({
-  reducer: reducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [REHYDRATE, PERSIST],
-      },
-    }),
+const store = configureStore({
+    reducer:{
+        campers:camperReducer,
+        favorites:favoriteReducer
+    }
 });
 
-export const persistor = persistStore(store);
+
+export {store}

@@ -1,0 +1,41 @@
+.load-more {
+    border: 1px solid #F2F4F7;
+    border-radius: 200px;
+    background-color: white;
+    transition: 0.3s;
+    color: black;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    width: fit-content;
+}
+.container{
+    padding: 0;
+}
+
+
+
+.load-more:hover {
+    border-color: #E44848;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form-container {
+    width: 30%; /* Adjust the width as needed */
+    margin-right: 20px; /* Add margin between form and cards */
+
+}
+
+.cards-container {
+    width: 70%; /* Adjust the width as needed */
+}
+
+
+/* Other styles remain the same */

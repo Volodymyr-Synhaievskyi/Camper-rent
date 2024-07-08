@@ -1,0 +1,144 @@
+.card {
+    display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 750px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+span{
+    border-radius: 10px;
+}
+
+.card-image {
+    width: 240px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.card-content {
+    padding: 15px;
+    flex: 1;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-price-heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card-price-heart-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-price {
+    font-size: 1.4em;
+    color: #000;
+    font-weight: bold;
+    background: white;
+
+}
+
+.heart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #000;
+}
+
+.card-details {
+    margin: 10px 0;
+}
+
+.card-rating-location {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+}
+
+.card-rating span {
+    margin-right: 5px;
+}
+
+.card-location {
+    font-size: 0.9em;
+    color: rgb(128, 128, 128);
+}
+
+.card-description {
+    margin: 20px 0;
+    color: #666;
+}
+
+.card-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.card-features span {
+    display: flex;
+    align-items: center;
+    background-color: #F2F4F7;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+
+.card-features span svg {
+    margin-right: 5px;
+}
+
+.card-button {
+    background: #E44848;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.card-button:hover{
+    background: #d73c3c;
+    color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: background 0.5s;
+}
+
+.card-button:hover {
+    background: #e44b4b;
+}
+
+a{
+    color: black;
+}
